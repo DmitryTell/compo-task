@@ -1,0 +1,32 @@
+.info__order-price 
+    span.info__price-without-sale= (store.isSelectedInPack ? store.price * store.amount * 12 : store.price * store.amount).toFixed(2) + " цена без скидки"
+    p.info__price= ((store.isSelectedInPack ? store.price * store.amount * 12 : store.price * store.amount) - ((store.isSelectedInPack ? store.price * store.amount * 12 : store.price * store.amount) * 0.15)).toFixed(2) + " ₽"
+        span.info__sale -15%
+    .info__order-pack 
+        span.info__order-amount 12 шт. в уп.
+        input(type="range" class=`range-amount ${store.isSelectedInPack ? "range-amount--selected" : ""}` min="0" max="1" step="1" value=`${store.isSelectedInPack ? 1 : 0}` @click="click_range")
+        span.info__order-text Заказ упаковкой
+.info__order-cart 
+    .info__cart-data 
+        .info__data-block
+            span.info__data-bg-text Завтра 
+            span.info__data-sm-text Доставка
+        .info__data-block
+            span.info__data-bg-text= (store.isSelectedInPack ? store.amount * 12 : store.amount) + " шт."
+            span.info__data-sm-text Тарасовка
+        .info__data-block
+            span.info__data-bg-text= (store.isSelectedInPack ? store.amount * 12 : store.amount) + " шт."
+            span.info__data-sm-text Тарасовка
+    .info__cart-buttons
+        if store.isOpenedCart 
+            .info__cart-counter 
+                input(type="text" value=`${store.isSelectedInPack ? store.amount * 12 : store.amount} шт.` disabled class="counter-input")
+                button.counter-button.counter-button--minus(@click="click_minus")
+                    img(src="./public/img/minus-icon.svg")
+                button.counter-button.counter-button--plus(@click="click_plus")
+                    img(src="./public/img/plus-icon.svg")
+        else
+            button.button.cart-button(@click="click_cart_button") В корзину
+                img(src="./public/img/cart-button-icon-white.svg")
+        button.cart-like 
+            img(src="./public/img/cart-like-icon.svg")

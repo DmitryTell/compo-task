@@ -62,6 +62,7 @@ button {
 .menu-button {
     width: 128px;
     height: 100%;
+    flex-flow: row-reverse;
 }
 
 .search-input {
@@ -132,6 +133,7 @@ button {
     line-height: 16px;
     color: #1551E5;
     display: flex;
+    flex-flow: row-reverse;
     justify-content: center;
     align-items: center;
     gap: 12px;
@@ -164,6 +166,7 @@ button {
     line-height: 16px;
     color: #1551E5;
     display: flex;
+    flex-flow: row-reverse;
     justify-content: center;
     align-items: center;
     gap: 8px;
@@ -251,6 +254,7 @@ button {
 .cart-button {
     width: 284px;
     height: 100%;
+    flex-flow: row-reverse;
 }
 
 .cart-like {

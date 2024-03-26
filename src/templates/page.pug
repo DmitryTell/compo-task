@@ -1,0 +1,161 @@
+.wrapper 
+    header.header 
+        .header__top.top 
+            img(src="./public/img/logo.svg" alt="Logo")
+            button.button.menu-button Меню
+                img(src="./public/img/menu-button-icon.svg")
+            .top__search 
+                input.search-input(type="text" placeholder="Название запроса")
+                button.search-close 
+                    img(src="./public/img/close-icon.svg")
+                button.search-loop 
+                    img(src="./public/img/loop-icon.svg")
+            .top__button-box 
+                button.signal 
+                    img(src="./public/img/signal-icon.svg")
+                .top__line
+                button.like 
+                    img(src="./public/img/like-icon.svg")
+            button.top-cart-button 144 235₽
+                img(src="./public/img/cart-button-icon.svg")
+            .top__user 
+                img(src="./public/img/image.png" alt="User ava")
+                p.top__user-name Ермаков Е.
+                button.user-arrow 
+                    img(src="./public/img/user-arrow-icon.svg")
+        nav.header__nav.nav 
+            .nav__left 
+                a.left-link(href="#") Мои заказы
+                a.left-link(href="#") Сотрудники
+                a.left-link(href="#") Шаблоны заказов
+                a.left-link(href="#") Обращения
+            .nav__right
+                button.right-button Ваш менеджер
+                    img(src="./public/img/nav-left-button-icon.svg")
+                a.right-link(href="#") % Акции
+                a.right-link(href="#") Блог
+    .container 
+        main.main 
+            .main__path 
+                a.path-link(href="#") Каталог
+                span.main__path-slash /
+                a.path-link(href="#") Обувь
+                span.main__path-slash /
+                a.path-link(href="#") Кроссовки
+                span.main__path-slash /
+                a.path-link(href="#") Беговые
+            h2.main__title Кроссовки мужские Skechers Sunny Dale
+            section.main__content.content 
+                .content__photo-block 
+                    img(src="./public/img/item.png" alt="Main photo")
+                    .content__select-photo 
+                        button.prev-button
+                            img(src="./public/img/prev-icon.svg")
+                        .content__select-photo-min
+                            img(src="./public/img/item-min-1.png" alt="Min photo")
+                        .content__select-photo-min
+                            img(src="./public/img/item-min-2.png" alt="Min photo")
+                        .content__select-photo-min
+                            img(src="./public/img/item-min-3.png" alt="Min photo")
+                        .content__select-photo-min
+                            img(src="./public/img/item-min-4.png" alt="Min photo")
+                        button.next-button 
+                            img(src="./public/img/next-icon.svg")
+                .content__right-container 
+                    .content__info.info 
+                        .info__order-block#order-block
+                        .info__chars-block 
+                            h4.info__chars-title Характеристики
+                            .info__chars 
+                                .info__char-block
+                                    span.info__char-bg-text ELC00696
+                                    span.info__char-sm-text Код поставщика
+                                .info__char-block
+                                    span.info__char-bg-text ELC00696
+                                    span.info__char-sm-text Код РАЭК
+                                .info__char-block
+                                    span.info__char-bg-text Electric used
+                                    span.info__char-sm-text Бренд
+                                .info__char-block
+                                    span.info__char-bg-text ELC0200000696
+                                    span.info__char-sm-text Код производителя
+                                .info__char-block
+                                    span.info__char-bg-text ELC0200000696
+                                    span.info__char-sm-text Артикул
+                                .info__char-block
+                                    span.info__char-bg-text ELC00696
+                                    span.info__char-sm-text Код ЕТМ
+                                .info__char-block
+                                    span.info__char-bg-text ELC00696
+                                    span.info__char-sm-text Серия
+                    .content__description
+                        h3.content__description-title Описание товара
+                        p.content__description-text Создание приверженного покупателя специфицирует неопровержимый комплексный анализ ситуации. CTR существенно индуцирует из ряда вон выходящий SWOT-анализ. Воздействие на потребителя определяет возрастающий интеграл по поверхности, что известно даже школьникам. Отсюда естественно следует, что коммуникация уравновешивает косвенный фактор коммуникации. Поле направлений естественно допускает экспериментальный скачок функции, таким образом сбылась мечта идиота - утверждение полностью доказано. Арифметическая прогрессия притягивает линейно зависимый пул лояльных изданий.
+        footer.footer 
+            section.footer__top-section.top-section
+                .top-section__contacts
+                    img(src="./public/img/logo.svg" alt="Logo")
+                    .top-section__support
+                        span.top-section__bg-text 8 800 841-95-95
+                        span.top-section__sm-text Служба поддержки
+                    .top-section__support
+                        span.top-section__bg-text support@sport.ru
+                        span.top-section__sm-text Служба поддержки
+                .top-section__links
+                    a.top-footer-link(href="#") Вакансии
+                    a.top-footer-link(href="#") Блог
+                    a.top-footer-link(href="#") Акции
+                    button.footer-button Предложить  идею
+            section.footer__center-section.center-section
+                .center-section__block
+                    h4.center-section__title Женщинам
+                    .center-section__links
+                        a.center-footer-link(href="#") Одежда
+                        a.center-footer-link(href="#") Обувь
+                        a.center-footer-link(href="#") Аксессуары
+                        a.center-footer-link(href="#") Белье
+                        a.center-footer-link(href="#") Bra fitting
+                .center-section__block
+                    h4.center-section__title Мужчинам
+                    .center-section__links
+                        a.center-footer-link(href="#") Одежда
+                        a.center-footer-link(href="#") Обувь
+                        a.center-footer-link(href="#") Аксессуары
+                        a.center-footer-link(href="#") Белье
+                .center-section__block
+                    h4.center-section__title Детям
+                    .center-section__links
+                        a.center-footer-link(href="#") Одежда
+                        a.center-footer-link(href="#") Обувь
+                        a.center-footer-link(href="#") Аксессуары
+                        a.center-footer-link(href="#") Белье
+                        a.center-footer-link(href="#") Игрушки
+                        a.center-footer-link(href="#") Малыши
+                .center-section__block
+                    h4.center-section__title Виды спорта
+                    .center-section__links
+                        a.center-footer-link(href="#") Велоспорт
+                        a.center-footer-link(href="#") Туризм
+                        a.center-footer-link(href="#") Тренажеры и фитнес
+                        a.center-footer-link(href="#") Командные виды спорта
+                        a.center-footer-link(href="#") Самокаты
+            section.footer__bottom-section.bottom-section
+                .bottom-section__links
+                    a.bottom-footer-link(href="#")
+                        img(src="./public/img/pdf-icon.svg")
+                        | PDF  презентация
+                    a.bottom-footer-link(href="#")
+                        img(src="./public/img/video-icon.svg")
+                        | Видео инструкция
+                    a.bottom-footer-link(href="#")
+                        img(src="./public/img/faq-icon.svg")
+                        | FAQ
+                    a.youtube-footer-link(href="#")
+                        img(src="./public/img/youtube-icon.svg")
+                        | Мы на YouTube
+                    a.bottom-footer-link(href="#") Политика конфиденциальности
+                    a.bottom-footer-link(href="#") Лицензионное соглашение
+                p.bottom-section__privacy-policy Настоящая Политика обработки персональных данных разработана в соответствии с Конституцией Российской Федерации, Трудовым кодексом Российской Федерации, Гражданским кодексом Российской Федерации, Федеральным законом от 27 июля 2006 года 149-ФЗ "Об информации, информационных технологиях и о защите информации".
+                .bottom-section__copyright
+                    img(src="./public/img/footer-logo.svg" alt="Logo")
+                    p.bottom-section__copyright-text Разработка платформы
