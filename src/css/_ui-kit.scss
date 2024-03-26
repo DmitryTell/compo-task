@@ -1,0 +1,360 @@
+@mixin button-24px-24px {
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+}
+
+@mixin button-32px-32px {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    scrollbar-width: 0;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.button {
+    background: #1551E5;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.5s;
+
+    &:hover {
+        background: #316CFF;
+    }
+
+    &:disabled {
+        background: #E9ECF2;
+        color: #B2BACE;
+    }
+}
+
+.menu-button {
+    width: 128px;
+    height: 100%;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    padding-left: 16px;
+    padding-right: 70px;
+    border: 1px solid #E2E4F0;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #071435;
+
+    &:focus {
+        border: 2px solid #1551E5;
+    }
+
+    &::placeholder {
+        color: #828EAD;
+    }
+
+    &::-webkit-input-placeholder {
+        color: #828EAD;
+    }
+
+    &:-ms-input-placeholder {
+        color: #828EAD;
+    }
+
+    &--error {
+        border: 2px solid #FF608A;
+        color: #FF608A;
+    }
+}
+
+.search-close {
+    position: absolute;
+    top: 12px;
+    right: 45px;
+    @include button-24px-24px();
+}
+
+.search-loop {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    @include button-24px-24px();
+}
+
+.signal {
+    @include button-32px-32px();
+}
+
+.like {
+    @include button-32px-32px();
+}
+
+.top-cart-button {
+    width: 148px;
+    height: 100%;
+    background: #F2F6FF;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #1551E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-arrow {
+    @include button-24px-24px();
+}
+
+.left-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #071435;
+    transition: all 0.5s;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.right-button {
+    width: 159px;
+    height: 32px;
+    background: #F2F6FF;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #1551E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.right-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #1551E5;
+    transition: all 0.5s;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.path-link {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #828EAD;
+    transition: all 0.5s;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.prev-button,
+.next-button {
+    width: 38px;
+    height: 100%;
+    background: #F2F6FF;
+    border: none;
+    border-radius: 8px;
+}
+
+.range-amount {
+    -webkit-appearance: none;
+    width: 40px;
+    outline: none;
+    cursor: pointer;
+
+    &::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        height: 24px;
+        background: #828EAD;
+        border-radius: 32px;
+    }
+
+    &::-moz-range-track {
+        height: 24px;
+        background: #828EAD;
+        border-radius: 32px;
+    }
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        transform: translateY(10%);
+    }
+
+    &::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        transform: translateY(10%);
+    }
+
+    &::-moz-range-progress {
+        height: 24px;
+        background-color: #1551E5;
+    }
+
+    &--selected::-webkit-slider-runnable-track {
+        background: #1551E5;   
+    }
+}
+
+.cart-button {
+    width: 284px;
+    height: 100%;
+}
+
+.cart-like {
+    width: 72px;
+    height: 100%;
+    background: #F2F6FF;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-footer-link {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #071435;
+    transition: all 0.5s;
+
+    &:hover {
+        opacity: 0.5;
+        text-decoration: underline;
+    }
+}
+
+.footer-button {
+    width: 179px;
+    height: 48px;
+    background: #F2F6FF;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #1551E5;
+}
+
+.center-footer-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #050D23;
+    transition: all 0.5s;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.bottom-footer-link,
+.youtube-footer-link {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #828EAD;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.5s;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.youtube-footer-link {
+    color: #1551E5;
+}
+
+.counter-input {
+    width: 100%;
+    height: 100%;
+    padding-left: 45%;
+    border: none;
+    outline: 2px solid #1551E5;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #071435;
+
+    &:disabled {
+        background: transparent;
+    }
+}
+
+.counter-button {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--minus {
+        top: 16px;
+        left: 8px;
+    }
+
+    &--plus {
+        top: 16px;
+        right: 8px;
+    }
+}

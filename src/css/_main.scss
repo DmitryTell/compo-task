@@ -1,0 +1,258 @@
+.main {
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-flow: column;
+    gap: 32px;
+
+    &__path {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__path-slash {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #828EAD;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #071435;
+    }
+
+    &__content {
+        display: flex;
+        gap: 48px;
+    }
+
+    .content {
+        &__photo-block {
+            width: 400px;
+            display: flex;
+            flex-flow: column;
+            gap: 24px;
+        }
+
+        &__select-photo {
+            width: 100%;
+            height: 64px;
+            display: flex;
+            gap: 16px;
+        }
+
+        &__select-photo-min {
+            width: 64px;
+            height: 64px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__right-container {
+            padding-top: 24px;
+            display: flex;
+            flex-flow: column;
+            gap: 48px;
+        }
+
+        &__info {
+            display: flex;
+            gap: 48px;
+        }
+
+        .info {
+            &__order-block {
+                width: 372px;
+                display: flex;
+                flex-flow: column;
+                gap: 32px;
+            }
+
+            &__order-price {
+                display: flex;
+                flex-flow: column;
+                gap: 32px;
+            }
+
+            &__price-without-sale {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                color: #FF3D71;
+            }
+
+            &__price {
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 48px;
+                color: #071435;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+
+            &__sale {
+                width: 53px;
+                height: 22px;
+                padding: 2px 8px;
+                background: #FF3D71;
+                border-radius: 4px;
+                font-size: 16px;
+                line-height: 20px;
+                color: #fff;
+            }
+
+            &__order-pack {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+
+            &__order-amount {
+                width: 111px;
+                height: 26px;
+                padding: 8px;
+                background: #F2F5F9;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 16px;
+                color: #828EAD;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &__order-text {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16px;
+                color: #071435;
+            }
+
+            &__order-cart {
+                padding-top: 32px;
+                border-top: 1px solid #E2E4F0;
+                display: flex;
+                flex-flow: column;
+                gap: 32px;
+            }
+
+            &__cart-counter {
+                position: relative;
+                width: 284px;
+                height: 56px;
+            }
+
+            &__cart-data {
+                display: flex;
+                gap: 16px;
+            }
+
+            &__data-block {
+                width: 113px;
+                display: flex;
+                flex-flow: column;
+                gap: 4px;
+            }
+
+            &__data-bg-text {
+                margin-bottom: 10px;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 16px;
+                color: #071435;
+            }
+
+            &__data-sm-text {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                color: #828EAD;
+            }
+
+            &__cart-buttons {
+                height: 56px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &__chars-block {
+                padding-top: 10px;
+                padding-left: 48px;
+                padding-bottom: 10px;
+                border-left: 1px solid #E2E4F0;
+                display: flex;
+                flex-flow: column;
+                gap: 32px;
+            }
+
+            &__chars-title {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 20px;
+                color: #071435;
+            }
+
+            &__chars {
+                height: 248px;
+                display: flex;
+                flex-flow: column;
+                flex-wrap: wrap;
+                gap: 24px;
+            }
+
+            &__char-block {
+                width: 302px;
+                display: flex;
+                flex-flow: column;
+                gap: 8px;
+            }
+
+            &__char-bg-text {
+                margin-bottom: 3px;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 16px;
+                color: #071435;
+            }
+
+            &__char-sm-text {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                color: #828EAD;
+            }
+        }
+
+        &__description {
+            display: flex;
+            flex-flow: column;
+            gap: 24px;
+        }
+
+        &__description-title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            color: #071435;
+        }
+
+        &__description-text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            color: #071435;
+        }
+    }
+}
